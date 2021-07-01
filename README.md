@@ -95,8 +95,8 @@ We assume that there is Gaussian noise ( 𝑢  ,  𝑟2 ) in measurement of the 
 
 <br>
 <font size="4">
-For an object whose postion on the x-axis varies as:
-    ![](https://latex.codecogs.com/png.latex?X%28t%29%3D%20t%20&plus;%200.5t%5E2)
+For an object whose postion on the x-axis varies as: 
+  X(t)= t + 0.5t^2
 The state estimate is given by
 ![](https://latex.codecogs.com/png.latex?X_t%20%3D%20A_t%20X_%7Bt-1%7D%20&plus;%20Bu_t)
 

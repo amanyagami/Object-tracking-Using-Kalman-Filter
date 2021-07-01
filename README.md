@@ -54,6 +54,7 @@ We assume that there is Gaussian noise ( 𝑢  ,  𝑟2 ) in measurement of the 
  The Update step takes in the predicted postion of the car in terms of the mean ,𝜈  and variance ,𝑟2 of the Gaussian distribution representing it and updates the position based on the measured position represnted by it's mean,𝜇 and variance,𝜎2 
 
 </font>
+
 ![](https://latex.codecogs.com/png.latex?%5Cmu%5E%7B%27%7D%20%3D%20%5Cfrac%7B%5Cmu%20r%5E2%20&plus;%20%5Cnu%5Csigma%5E2%7D%7Br%5E2%20&plus;%20%5Csigma%5E2%7D)
 ![](https://latex.codecogs.com/png.latex?%5Csigma%5E%7B%27%7D%20%3D%20%5Cfrac%7B1%7D%7B%5Cfrac%7B1%7D%7Br%5E2%7D&plus;%5Cfrac%7B1%7D%7B%5Csigma%5E2%7D%7D)
 

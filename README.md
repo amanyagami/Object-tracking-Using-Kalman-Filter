@@ -46,6 +46,7 @@ We assume that there is Gaussian noise ( 𝑢  ,  𝑟2 ) in measurement of the 
 </font>
 
 ![e1](https://latex.codecogs.com/png.latex?%5Cmu%5E%7B%27%7D%20%3D%20%5Cmu&plus;u)
+
 ![e2](https://latex.codecogs.com/png.latex?%5Csigma%5E%7B%27%7D%20%3D%20%5Csigma%5E2%20&plus;%20r%5E2)
 
 <br>
@@ -56,6 +57,7 @@ We assume that there is Gaussian noise ( 𝑢  ,  𝑟2 ) in measurement of the 
 </font>
 
 ![e3](https://latex.codecogs.com/png.latex?%5Cmu%5E%7B%27%7D%20%3D%20%5Cfrac%7B%5Cmu%20r%5E2%20&plus;%20%5Cnu%5Csigma%5E2%7D%7Br%5E2%20&plus;%20%5Csigma%5E2%7D)
+
 ![e4](https://latex.codecogs.com/png.latex?%5Csigma%5E%7B%27%7D%20%3D%20%5Cfrac%7B1%7D%7B%5Cfrac%7B1%7D%7Br%5E2%7D&plus;%5Cfrac%7B1%7D%7B%5Csigma%5E2%7D%7D)
 
 # Kalman Filter Equations  For 1-D model

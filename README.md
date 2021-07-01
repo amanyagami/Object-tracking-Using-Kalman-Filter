@@ -17,7 +17,9 @@ Today kalman filters are used in guidance, navigation of vehicles such a aircraf
 # Basics and application in 1-D
 
 ![](1.jpeg)
-<font size="4">A variable whose change doesnt have an uncertainity and error can predicted precisely. Hence kalman filter is used to predict such variables which have errors in measurement and prediction.
+
+<font size="4">
+A variable whose change doesn't have an uncertainity and error can predicted precisely. Hence kalman filter is used to predict such variables which have errors in measurement and prediction.
 
 The Kalman filter represents all distributions by Gaussian distribution.
 Mean(μ) and Variance(σ2) representing a Gaussian distibution is taken as the best estimate for representing the probality distribution for the measured and estimated position of the car along the x-axis for Kalman Filter.

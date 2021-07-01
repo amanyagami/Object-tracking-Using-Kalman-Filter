@@ -39,12 +39,12 @@ Kalman filters has two major iterative steps :
 A 1-D Kalman Filter is used to track an object moving along the x-axis.
 For example a car moving along a road with it's position being measured and estimated.
     
-We assume that there is Gaussian noise($u$ , $r^2$) in measurement of the position of the car. Hence the mean and variance of the car changes as
-                    𝜇′=𝜇+𝑢
+We assume that there is Gaussian noise ( 𝑢  ,  𝑟2 ) in measurement of the position of the car. Hence the mean and variance of the car changes as
+  
+𝜇′=𝜇+𝑢
  
-                    𝜎′=𝜎2+𝑟2
-$$\mu^{'} = \mu+u$$
-$$\sigma^{'} = \sigma^2 + r^2 $$    
+𝜎′=𝜎2+𝑟2
+ 
     
 </font>
 
@@ -53,10 +53,12 @@ $$\sigma^{'} = \sigma^2 + r^2 $$
 <br>
 
 <font size="4">
- The Update step takes in the predicted postion of the car in terms of the mean ,$\nu$ and variance ,$r^2$ of the Gaussian distribution representing it and updates the position based on the measured position represnted by it's mean,$\mu$ and variance,$\sigma^2$
+ The Update step takes in the predicted postion of the car in terms of the mean ,𝜈  and variance ,𝑟2 of the Gaussian distribution representing it and updates the position based on the measured position represnted by it's mean,𝜇 and variance,𝜎2 
+
     
-$$\mu^{'} = \frac{\mu r^2 + \nu\sigma^2}{r^2 + \sigma^2}$$
-$$\sigma^{'} = \frac{1}{\frac{1}{r^2}+\frac{1}{\sigma^2}} $$    
+𝜇′=𝜇𝑟2+𝜈𝜎2/𝑟2+𝜎2
+ 
+𝜎′=1/(1/(𝑟^2)+1/(𝜎^2))   
     
 </font>
 

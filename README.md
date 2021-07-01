@@ -98,9 +98,11 @@ We assume that there is Gaussian noise ( 𝑢  ,  𝑟2 ) in measurement of the 
 For an object whose postion on the x-axis varies as: 
   X(t)= t + 0.5t^2
 The state estimate is given by
+  
 ![](https://latex.codecogs.com/png.latex?X_t%20%3D%20A_t%20X_%7Bt-1%7D%20&plus;%20Bu_t)
 
 the error covariance matrix  is given by 
+  
    ![](https://latex.codecogs.com/png.latex?P_k%20%3D%20E%5B%28X%5E%7Bacutal%7D_t%20-X_t%29%28X%5E%7Bactual%7D_t%20-X_t%29%5ET%5D)
     
 ![](https://latex.codecogs.com/png.latex?%7BP%7D_k%20%3D%20A%20%7BP%7D_%7Bk-1%7DA%5ET&plus;%20%7BQ%7D)
@@ -108,9 +110,11 @@ the error covariance matrix  is given by
 
     
  Updating ![](https://latex.codecogs.com/png.latex?X_t)
+  
     ![](https://latex.codecogs.com/png.latex?X_t%20%3D%20X_%7Bt-1%7D%20&plus;%20%5Cdot%7BX_%7Bt-1%7D%7D%5CDelta%20t%20&plus;%20%5Cfrac%7B1%7D%7B2%7D%5Cdot%7B%5Cdot%7BX_t%7D%7D%7B%5CDelta%20t%7D%5E2)
     
 And ![](https://latex.codecogs.com/png.latex?%5Cdot%7BX_t%7D) is 
+  
     ![](https://latex.codecogs.com/png.latex?%5Cdot%7BX_t%7D%20%3D%20%5Cdot%7BX_%7Bt-1%7D%7D%20&plus;%20%5Cdot%7B%5Cdot%7BX_%7Bt-1%7D%7D%7D%5CDelta%20t)
     
 And ![](https://latex.codecogs.com/png.latex?%5Cdot%7B%5Cdot%7BX_%7Bt-1%7D%7D%7D)(acceleration of the car at time t-1) is assumed constant

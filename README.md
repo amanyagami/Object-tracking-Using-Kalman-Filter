@@ -69,21 +69,21 @@ We assume that there is Gaussian noise ( 𝑢  ,  𝑟2 ) in measurement of the 
  
  *  ![](https://latex.codecogs.com/png.latex?%5Cbf%7BPredict%7D%24%20%24%20%5Cbf%7BEquations%20%7D) : To find the current state using the previous state.
     <br>
-   * $\bf{X_t}$ : Predicted state estimate<br>
-   * $\bf{P_k} $: Predicted error covariance<br>
+   * ![](https://latex.codecogs.com/png.latex?%5Cbf%7BX_t%7D) : Predicted state estimate<br>
+   * ![](https://latex.codecogs.com/png.latex?%5Cbf%7BP_k%7D): Predicted error covariance<br>
       
 <br><br>
     
-* $\bf{Corrector}$ $  \bf{Equations}$ : To improve the curent estimated state by incorporating a new measurement into the model
+* ![](https://latex.codecogs.com/png.latex?%5Cbf%7BCorrector%7D%24%20%24%20%5Cbf%7BEquations%7D): To improve the curent estimated state by incorporating a new measurement into the model
     <br>
     
-   * $\bf{v_t}$ : Measurement residual<br>
+   * ![](https://latex.codecogs.com/png.latex?%5Cbf%7Bv_t%7D) : Measurement residual<br>
     
-   * $\bf{K_t}$ : Kalman gain
+   * ![](https://latex.codecogs.com/png.latex?%5Cbf%7BK_t%7D) : Kalman gain
     
-   * $\bf{X_t}$ : Updated state estimate
+   * ![](https://latex.codecogs.com/png.latex?%5Cbf%7BX_t%7D) : Updated state estimate
    
-   * $\bf{P_t}$ : Updated error covariance 
+   * ![](https://latex.codecogs.com/png.latex?%5Cbf%7BP_t%7D) : Updated error covariance 
 
     
     
@@ -96,39 +96,39 @@ We assume that there is Gaussian noise ( 𝑢  ,  𝑟2 ) in measurement of the 
 <br>
 <font size="4">
 For an object whose postion on the x-axis varies as:
-    $$X(t)= t + 0.5t^2$$
+    ![](https://latex.codecogs.com/png.latex?X%28t%29%3D%20t%20&plus;%200.5t%5E2)
 The state estimate is given by
-$$ X_t = A_t X_{t-1} + Bu_t $$
+![](https://latex.codecogs.com/png.latex?X_t%20%3D%20A_t%20X_%7Bt-1%7D%20&plus;%20Bu_t)
 
 the error covariance matrix  is given by 
-    $$P_k = E[(X^{acutal}_t -X_t)(X^{actual}_t -X_t)^T]$$
+   ![](https://latex.codecogs.com/png.latex?P_k%20%3D%20E%5B%28X%5E%7Bacutal%7D_t%20-X_t%29%28X%5E%7Bactual%7D_t%20-X_t%29%5ET%5D)
     
-$$  {P}_k = A {P}_{k-1}A^T+ {Q} $$
+![](https://latex.codecogs.com/png.latex?%7BP%7D_k%20%3D%20A%20%7BP%7D_%7Bk-1%7DA%5ET&plus;%20%7BQ%7D)
 
 
     
- Updating $X_t$ 
-    $$ X_t = X_{t-1} + \dot{X_{t-1}}\Delta t + \frac{1}{2}\dot{\dot{X_t}}{\Delta t}^2$$
+ Updating ![](https://latex.codecogs.com/png.latex?X_t)
+    ![](https://latex.codecogs.com/png.latex?X_t%20%3D%20X_%7Bt-1%7D%20&plus;%20%5Cdot%7BX_%7Bt-1%7D%7D%5CDelta%20t%20&plus;%20%5Cfrac%7B1%7D%7B2%7D%5Cdot%7B%5Cdot%7BX_t%7D%7D%7B%5CDelta%20t%7D%5E2)
     
-And $\dot{X_t}$ is 
-    $$\dot{X_t} = \dot{X_{t-1}} + \dot{\dot{X_{t-1}}}\Delta t $$
+And ![](https://latex.codecogs.com/png.latex?%5Cdot%7BX_t%7D) is 
+    ![](https://latex.codecogs.com/png.latex?%5Cdot%7BX_t%7D%20%3D%20%5Cdot%7BX_%7Bt-1%7D%7D%20&plus;%20%5Cdot%7B%5Cdot%7BX_%7Bt-1%7D%7D%7D%5CDelta%20t)
     
-And $\dot{\dot{X_{t-1}}}$(acceleration of the car at time $t-1$) is assumed constant
+And ![](https://latex.codecogs.com/png.latex?%5Cdot%7B%5Cdot%7BX_%7Bt-1%7D%7D%7D)(acceleration of the car at time t-1) is assumed constant
     
     
 The state vector
-    $$\bf{X_t}=\begin{bmatrix} X_t \\ \dot{X_t}\end{bmatrix}= \begin{bmatrix} X_{t-1} + \dot{X_{t-1}}\Delta t + \frac{1}{2}\dot{\dot{X_t}}{\Delta t}^2 \\ \dot{X_{t-1}} + \dot{\dot{X_{t-1}}}\Delta t \end{bmatrix} $$
+   ![](https://latex.codecogs.com/png.latex?%5Cbf%7BX_t%7D%3D%5Cbegin%7Bbmatrix%7D%20X_t%20%5C%5C%20%5Cdot%7BX_t%7D%5Cend%7Bbmatrix%7D%3D%20%5Cbegin%7Bbmatrix%7D%20X_%7Bt-1%7D%20&plus;%20%5Cdot%7BX_%7Bt-1%7D%7D%5CDelta%20t%20&plus;%20%5Cfrac%7B1%7D%7B2%7D%5Cdot%7B%5Cdot%7BX_t%7D%7D%7B%5CDelta%20t%7D%5E2%20%5C%5C%20%5Cdot%7BX_%7Bt-1%7D%7D%20&plus;%20%5Cdot%7B%5Cdot%7BX_%7Bt-1%7D%7D%7D%5CDelta%20t%20%5Cend%7Bbmatrix%7D)
 
 
 On Simplifying
 
 
-$$\bf{X_t}=\begin{bmatrix} X_t \\ \dot{X_t}\end{bmatrix}= \begin{bmatrix} 1 & \Delta t \\ 0 & 1 \end{bmatrix} \begin{bmatrix} X_{t-1} \\ \dot{X_{t-1}}\end{bmatrix} + \begin{bmatrix}\frac{1}{2}{\Delta t}^2  \\ \Delta t\end{bmatrix} \dot{\dot{X_{t-1}}}$$
+![](https://latex.codecogs.com/png.latex?%5Cbf%7BX_t%7D%3D%5Cbegin%7Bbmatrix%7D%20X_t%20%5C%5C%20%5Cdot%7BX_t%7D%5Cend%7Bbmatrix%7D%3D%20%5Cbegin%7Bbmatrix%7D%201%20%26%20%5CDelta%20t%20%5C%5C%200%20%26%201%20%5Cend%7Bbmatrix%7D%20%5Cbegin%7Bbmatrix%7D%20X_%7Bt-1%7D%20%5C%5C%20%5Cdot%7BX_%7Bt-1%7D%7D%5Cend%7Bbmatrix%7D%20&plus;%20%5Cbegin%7Bbmatrix%7D%5Cfrac%7B1%7D%7B2%7D%7B%5CDelta%20t%7D%5E2%20%5C%5C%20%5CDelta%20t%5Cend%7Bbmatrix%7D%20%5Cdot%7B%5Cdot%7BX_%7Bt-1%7D%7D%7D)
 
 Comparing the above equation with kalman equations and matching the coefficents
 
-$$A =\begin{bmatrix} 1 & \Delta t \\ 0 & 1 \end{bmatrix} $$
-$$B = \begin{bmatrix}\frac{1}{2}{\Delta t}^2  \\ \Delta t\end{bmatrix}$$
+![](https://latex.codecogs.com/png.latex?A%20%3D%5Cbegin%7Bbmatrix%7D%201%20%26%20%5CDelta%20t%20%5C%5C%200%20%26%201%20%5Cend%7Bbmatrix%7D)
+![](https://latex.codecogs.com/png.latex?B%20%3D%20%5Cbegin%7Bbmatrix%7D%5Cfrac%7B1%7D%7B2%7D%7B%5CDelta%20t%7D%5E2%20%5C%5C%20%5CDelta%20t%5Cend%7Bbmatrix%7D)
 
 Here acceleration can be thought of as the control input and B is the matrix that maps it to position and velocity. 
 </font>

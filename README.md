@@ -59,7 +59,7 @@ We assume that there is Gaussian noise ( 𝑢  ,  𝑟2 ) in measurement of the 
 𝜇′=𝜇𝑟2+𝜈𝜎2/𝑟2+𝜎2
  
 𝜎′=1/(1/(𝑟^2)+1/(𝜎^2))   
-    
+𝜎&prime;=𝜎2+𝑟2
 </font>
 
 

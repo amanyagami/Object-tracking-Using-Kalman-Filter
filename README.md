@@ -42,28 +42,20 @@ A 1-D Kalman Filter is used to track an object moving along the x-axis.
 For example a car moving along a road with it's position being measured and estimated.
     
 We assume that there is Gaussian noise ( 𝑢  ,  𝑟2 ) in measurement of the position of the car. Hence the mean and variance of the car changes as
-  
-𝜇′=𝜇+𝑢
- 
-𝜎′=𝜎2+𝑟2
- 
-    
+
 </font>
 
-
+![](a1.gif)
+![](a2.gif)
 
 <br>
 
 <font size="4">
  The Update step takes in the predicted postion of the car in terms of the mean ,𝜈  and variance ,𝑟2 of the Gaussian distribution representing it and updates the position based on the measured position represnted by it's mean,𝜇 and variance,𝜎2 
 
-    
-𝜇′=𝜇𝑟2+𝜈𝜎2/𝑟2+𝜎2
- 
-𝜎′=1/(1/(𝑟^2)+1/(𝜎^2))   
-𝜎&prime;=𝜎2+𝑟2
 </font>
-
+![](a3.gif)
+![](a4.gif)
 
 # Kalman Filter Equations  For 1-D model
 

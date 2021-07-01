@@ -45,8 +45,8 @@ We assume that there is Gaussian noise ( 𝑢  ,  𝑟2 ) in measurement of the 
 
 </font>
 
-![](a1.gif)
-![](a2.gif)
+![](https://latex.codecogs.com/gif.latex?%5Cmu%5E%7B%27%7D%20%3D%20%5Cmu&plus;u)
+![](https://latex.codecogs.com/gif.latex?%5Csigma%5E%7B%27%7D%20%3D%20%5Csigma%5E2%20&plus;%20r%5E2)
 
 <br>
 

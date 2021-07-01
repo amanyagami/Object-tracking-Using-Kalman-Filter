@@ -67,7 +67,7 @@ We assume that there is Gaussian noise ( 𝑢  ,  𝑟2 ) in measurement of the 
 <br>
 <font size="4">
  
- *  $\bf{Predict}$ $ \bf{Equations }$ : To find the current state using the previous state.
+ *  ![](https://latex.codecogs.com/png.latex?%5Cbf%7BPredict%7D%24%20%24%20%5Cbf%7BEquations%20%7D) : To find the current state using the previous state.
     <br>
    * $\bf{X_t}$ : Predicted state estimate<br>
    * $\bf{P_k} $: Predicted error covariance<br>
